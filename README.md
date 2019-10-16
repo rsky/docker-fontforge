@@ -11,3 +11,8 @@ Copies the glyph of `U+002F` (SOLIDUS) into `U+005C` (REVERSE SOLIDUS) and flips
 2. Run `make interactive`.
 3. Run `make flip-solidus` in the container.
 4. Then you can retrieve the modified fonts at *./fonts/dst.*
+
+## Dependencies
+
+- GNU make or BSD make
+- Docker

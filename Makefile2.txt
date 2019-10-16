@@ -1,0 +1,9 @@
+flip-solidus:
+	fontforge flip-solidus.sh fonts/src/* 
+
+all: flip-solidus
+
+clean:
+	rm -fv fonts/dst/*
+
+.PHONY: all clean flip-solidus

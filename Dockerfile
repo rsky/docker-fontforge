@@ -8,4 +8,6 @@ COPY Makefile2.txt /workspace/Makefile
 
 COPY flip-solidus.sh /workspace/
 
+COPY fontpatcher /workspace/fontpatcher
+
 WORKDIR /workspace

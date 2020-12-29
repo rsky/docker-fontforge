@@ -1,9 +1,13 @@
 flip-solidus:
 	fontforge flip-solidus.sh fonts/src/* 
 
-all: flip-solidus
+powerline: flip-solidus
+	fontforge -lang=py -script ./fontpatcher/scripts/powerline-fontpatcher fonts/dst/*
+	mv *' for Powerline.'* fonts/dst/
+
+all: powerline
 
 clean:
 	rm -fv fonts/dst/*
 
-.PHONY: all clean flip-solidus
+.PHONY: all clean flip-solidus powerline
